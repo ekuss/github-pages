@@ -5,12 +5,20 @@
     <title>github-pages</title>
   </head>
   <body>
-    <h1></h1>
     <p>この下にphpも書いてみる</p>
     <?php
       $text = "phpは動いているのか";
       echo "<h1>$text</h1>";
     ?>
+
+    <div id="text"> うごけー！ </div>
+    <input type="button" name="Click" onclick="button()">
+    <script type="text/javascript">
+      var button = function() {
+        var text = document.getElementById("text");
+        text.innerHTML = "う\"っ";
+      }
+    </script>
   </body>
 
 </html>
